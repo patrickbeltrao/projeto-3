@@ -231,6 +231,11 @@
 .sec-4{
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-areas: 'nome nome'
+                         'linha linha'
+                         'email email'
+                         'mensagem mensagem'
 
 
 }
@@ -250,15 +255,14 @@
 }
 
 .sec-4 form label{
-    display: block;
     text-align: left;
     color: silver;
+    margin-bottom: 15px;
 }
 
 .sec-4 form input{
-    display: block;
     width: 50%;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.644);
     border-left: none;
     border-top: none;
     border-right: none;
@@ -272,3 +276,4 @@
     box-shadow: none;
     
 }
+
