@@ -1,7 +1,19 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16pt;
+    font-size: 100%;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+
+
+
 .header-container{
     width: 100vw;
     height: 100vh;
@@ -46,9 +58,7 @@ body{
     padding: 15px 17px;
     text-decoration: none;
     text-transform: capitalize;
-
-    
-
+    font-size: 16pt;
 }
 
 .nav-header ul li a:hover{
@@ -56,10 +66,13 @@ body{
     color: #110101;
 }
 
+
+
+
 /*  SECTION 01  */
 
 .sec-1{
-    height: 300px;
+    height: 350px;
     background-color: #03a9f4;
     position: relative;
 }
@@ -69,40 +82,58 @@ body{
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   margin: 20px;
 }
 
 .sec-1 div p{
     font-family: 'Old Standard TT', serif;
     text-align: center;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 40px;
-  
-}
-
-.div-button{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    background-color: red;
-    width: 60px;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-    left: 80%;
-
+    font-size: 16pt;
+    letter-spacing: 2px;
 }
 
 .btn{
     border: none;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: transparent;
     color: #fff;
     cursor: pointer;
     font-size: 12pt;
-    
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
 .btn:hover{
-    background-color: #fff;
-    color: #03a9f4;
+    
+    color: #ff0000;
+
 }
+
+
+
+
+/** SECTION 2 **/
+
+
+.galeria div{
+    padding: 10px;
+}
+
+.galeria img{
+    border-radius: 7px;
+    box-shadow: 5px 3px 10px black;
+    height: 510px;
+    -webkit-filter: brightness(50%);
+    filter: grayscale(100%);
+}
+
+.galeria img:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+
