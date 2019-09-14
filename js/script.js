@@ -1,5 +1,6 @@
 $(function(){
-   
+
+
     $('.fancybox').fancybox({
         openEffect  : 'elastic',
         openSpeed: 150,
