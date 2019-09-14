@@ -12,7 +12,7 @@
 }
 
 
-
+/**  HEADER  **/
 
 .header-container{
     width: 100vw;
@@ -30,20 +30,37 @@
     
 }
 
-.nav-header{
-    width: 100%;
-    height: 50px;
+.header-container h1{
+    font-size: 40pt;
+    font-family: 'Old Standard TT', serif;
+    color: #fff;
 }
 
-.nav-header{
-    margin: 0;
-    padding: 0;
-    width: 100%;
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1.4);
+        color: #ff0000;
+    }
+}
+.header-container h1:hover{
+    animation: fade 2.5s  ease-in;
+    
+    
+    
 }
 
-.nav-header ul{
-    margin: 0;
-    padding: 0;
+
+/** NAV   **/
+
+.nav-header{
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(rgba(0, 255, 255, 0.589), rgba(62, 129, 230, 0.384));
 }
 
 .nav-header ul li{
@@ -55,14 +72,13 @@
 .nav-header ul li a{
     display: block;
     color: #fff;
-    padding: 15px 17px;
+    padding: 25px 17px;
     text-decoration: none;
-    text-transform: capitalize;
     font-size: 16pt;
 }
 
 .nav-header ul li a:hover{
-    background: rgba(0, 216, 216, 0.603);
+    background: rgba(155, 0, 216, 0.603);
     color: #110101;
 }
 
