@@ -87,6 +87,9 @@ body{
     background-color: red;
     width: 60px;
     height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 80%;
 
 }
 
@@ -95,6 +98,8 @@ body{
     background-color: rgba(0, 0, 0, .2);
     color: #fff;
     cursor: pointer;
+    font-size: 12pt;
+    
 }
 
 .btn:hover{
